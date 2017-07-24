@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bermainaksara.hurufmudah.HurufMudah">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <!-- Soal 2 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SOAL DUA"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp" />
+
+        <TextView
+            android:id="@+id/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="146dp" />
+
+        <!-- tombol bantuan & lewati -->
+        <ImageButton
+            android:id="@+id/bantuantempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/bantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/lewati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="@null"/>
+
+        <!-- jawaban -->
+        <ImageButton
+            android:id="@+id/satutempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/duatempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/tigatempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/tiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/empattempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/empat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="217dp"
+            android:contentDescription="@null"/>
+
+        <!--benar-->
+        <ImageButton
+            android:id="@+id/limatempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/lima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/enamtempa"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="217dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/enam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="280dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="217dp"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <!--bantuan-->
+    <RelativeLayout
+        android:id="@+id/Bantuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bgHitamBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:visibility="gone"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/bgBantuan"
+            android:layout_width="310dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:background="#0000"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/OKBantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <!--Dialog Keluar-->
+    <RelativeLayout
+        android:id="@+id/DialogKeluar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bgHitamDKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/bgDKeluar"
+            android:layout_width="310dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/btnYa"
+            android:background="#0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="225dp"
+            android:layout_marginTop="235dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnTidak"
+            android:background="#0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="235dp"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

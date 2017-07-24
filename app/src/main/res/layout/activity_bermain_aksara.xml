@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semangatta.lontaraku.BermainAksara">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/panelJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolmenebakhuruf"
+        android:layout_width="@dimen/tombolBermain"
+        android:layout_height="@dimen/tombolBermain"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="170dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolmenebakkata"
+        android:layout_width="@dimen/tombolBermain"
+        android:layout_height="@dimen/tombolBermain"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="170dp"
+        android:contentDescription="@null"/>
+
+</RelativeLayout>

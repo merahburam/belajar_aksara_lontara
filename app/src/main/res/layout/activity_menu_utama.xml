@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semangatta.lontaraku.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolbantuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="293dp"
+        android:contentDescription="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/panelPengaturan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/panelbiru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/tombolMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="140dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/tombolEfek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="189dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/tombolInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="237dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/sudut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <!-- Pengaturan -->
+    <ImageButton
+        android:id="@+id/tombolpengaturan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolbelajar"
+        android:layout_width="@dimen/tombolPlay"
+        android:layout_height="@dimen/tombolPlay"
+        android:background="#0000"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="170dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolbermain"
+        android:layout_width="@dimen/tombolPlay"
+        android:layout_height="@dimen/tombolPlay"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="140dp"
+        android:contentDescription="@null" />
+
+
+    <TextView
+        android:id="@+id/tekstombolbelajar"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Belajar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginTop="270dp" />
+
+    <TextView
+        android:id="@+id/tekstombolbermain"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bermain"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="160dp" />
+</RelativeLayout>

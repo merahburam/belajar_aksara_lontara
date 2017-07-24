@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bermainaksara.hurufmudah.HurufMudah">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <!-- Pemberitahuan -->
+    <RelativeLayout
+        android:id="@+id/Pemberitahuan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bgHitam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/bgPemberitahuan"
+            android:layout_width="310dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <!--Dialog Keluar-->
+    <RelativeLayout
+        android:id="@+id/DialogKeluar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bgHitamDKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/bgDKeluar"
+            android:layout_width="310dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/btnYa"
+            android:background="#0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="225dp"
+            android:layout_marginTop="235dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnTidak"
+            android:background="#0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="235dp"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

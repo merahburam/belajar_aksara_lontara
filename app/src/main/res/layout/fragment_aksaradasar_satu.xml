@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView
+            android:id="@+id/Panel"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:paddingEnd="5dp"
+            android:contentDescription="@null"/>-->
+
+        <ImageView
+            android:id="@+id/Panel"
+            android:layout_width="465dp"
+            android:layout_height="285dp"
+            android:background="#0000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/panelJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/Judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:contentDescription="@null"/>
+
+        <!-- baris pertama -->
+        <ImageButton
+            android:id="@+id/Ka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="180dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Ga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Nga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Ngka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="180dp"
+            android:contentDescription="@null"/>
+
+        <!--baris kedua-->
+        <ImageButton
+            android:id="@+id/Pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="180dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Ba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Mpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="180dp"
+            android:contentDescription="@null"/>
+
+        <!--baris ketiga-->
+        <ImageButton
+            android:id="@+id/Ta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="180dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="257dp"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/Nra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="180dp"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+</ScrollView>

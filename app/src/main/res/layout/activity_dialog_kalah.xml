@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aksaradasar.dasarsatu.DialogBunyiKa">
+
+    <ImageView
+        android:id="@+id/bgHitam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/background_bantuan"
+        android:layout_width="310dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:background="#0000"
+        android:contentDescription="@null"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/btnUlang"
+        android:background="#0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginTop="235dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnTingkat"
+        android:background="#0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:background="#0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="235dp"
+        android:contentDescription="@null"/>
+</RelativeLayout>

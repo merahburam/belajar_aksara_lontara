@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogBantuan">
+
+    <ImageView
+        android:id="@+id/bgHitam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/background_bantuan"
+        android:layout_width="310dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:background="#0000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/bgslide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <!-- Content Image Bantuan -->
+
+    <ImageView
+        android:id="@+id/bantuanSatu"
+        android:layout_width="310dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:background="#0000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/bantuanDua"
+        android:layout_width="310dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:background="#0000"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/bantuanTiga"
+        android:layout_width="310dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:background="#0000"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <!-- Button -->
+
+    <ImageButton
+        android:id="@+id/tombolkeluar"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="145dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnLeft1"
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="155dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnLeft2"
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="155dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnRight2"
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginTop="155dp"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/btnRight1"
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginTop="155dp"
+        android:contentDescription="@null"/>
+
+</RelativeLayout>

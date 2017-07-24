@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aksaradasar.AksaraDasar">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!-- <ImageButton
+        android:id="@+id/judulhalaman"
+        android:layout_width="@dimen/JudulAplikasiHeight"
+        android:layout_height="@dimen/JudulAplikasiWidth"
+        android:background="#0000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/judulAplikasiMarginTop"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />-->
+
+    <ImageButton
+        android:id="@+id/tombolkembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <ImageButton
+        android:id="@+id/tombolpenjelasan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:layout_marginTop="293dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/Pemberitahuan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bgHitam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/background_bantuan"
+            android:layout_width="310dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:id="@+id/OK"
+            android:clickable="false"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

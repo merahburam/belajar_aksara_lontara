@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Panel"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:background="#0000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="5dp"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/panelJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/Judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/Panel2"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:background="#0000"
+            android:layout_below="@+id/Panel"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <!--<TextView
+            android:id="@+id/panelsatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEJARAH COY"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"/>-->
+    </RelativeLayout>
+</ScrollView>

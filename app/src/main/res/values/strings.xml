@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lontara Ku</string>
+    <string name="cancel">Tidak</string>
+    <string name="yes">Ya</string>
+    <string name="dialog_title">Tutup Aplikasi</string>
+    <string name="dialog_message">Apakah Anda ingin menutup aplikasi?</string>
+    <string name="music_latar">Music Latar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Menu Utama -->
+    <dimen name="tombolPengaturan">80dp</dimen>
+    <dimen name="tombolKembali">80dp</dimen>
+    <dimen name="tombolBantuan">80dp</dimen>
+    <dimen name="tombolPlay">100dp</dimen>
+    <dimen name="tombolBermain">100dp</dimen>
+    <dimen name="JudulAplikasiHeight">400dp</dimen>
+    <dimen name="JudulAplikasiWidth">120dp</dimen>
+    <dimen name="judulAplikasiMarginTop">40dp</dimen>
+
+    <dimen name="wTitle">280dp</dimen>
+    <dimen name="hTitle">180dp</dimen>
+</resources>

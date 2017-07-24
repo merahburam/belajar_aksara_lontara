@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.semangatta.lontaraku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.semangatta.lontaraku.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <!-- SplashScreen -->
+        <activity
+            android:name=".SplashScreen"
+            android:largeHeap="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Service Musik -->
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+        <service
+            android:name=".MusicServiceBermain"
+            android:enabled="true" />
+        <service
+            android:name=".MusicServiceTombol"
+            android:enabled="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:largeHeap="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Dialog Menu Utama -->
+        <activity
+            android:name=".DialogBantuan"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".DialogInfoPengembang"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <!-- Menu Utama -->
+        <activity
+            android:name=".BelajarAksara"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".BermainAksara"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+
+        <!-- Menu Belajar Aksara -->
+        <activity
+            android:name=".belajaraksara.DaftarHuruf"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".belajaraksara.InfoAksara"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+
+        <!-- Daftar Huruf -->
+        <activity
+            android:name=".aksaradasar.AksaraDasar"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".aksarabunyi.AksaraBunyi"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".aksarasuara.AksaraSuara"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+
+        <!-- Tingkat Permainan -->
+        <activity
+            android:name=".bermainaksara.TingkatPermainanKata"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".bermainaksara.TingkatPermainanHuruf"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"/>
+
+        <!-- Dialog Penjelasan Aksara -->
+        <activity
+            android:name=".aksaradasar.DialogPenjelasanDasar"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".aksarabunyi.DialogPenjelasanBunyi"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".aksarasuara.DialogPenjelasanSuara"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <!-- menu info -->
+        <activity
+            android:name=".infosejarah.InfoAksaraSejarah"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".infopenggunaan.InfoAksaraPenggunaan"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <!-- dialog aksara dasar -->
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiKa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiGa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiNga"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiNgka"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiPa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiBa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiMa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiMpa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiTa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiDa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiNa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasarsatu.DialogBunyiNra"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiAa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiCa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiHa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiJa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiLa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiNca"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiNya"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiRa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiSa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiWa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksaradasar.dasardua.DialogBunyiYa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!-- dialog aksara bunyi -->
+        <activity
+            android:name=".aksarabunyi.DialogBunyiA"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiE"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiEe"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiI"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiO"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiTitik"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarabunyi.DialogBunyiU"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!-- dialog aksara suara -->
+        <activity
+            android:name=".aksarasuara.DialogBunyiKaa"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarasuara.DialogBunyiKe"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarasuara.DialogBunyiKi"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarasuara.DialogBunyiKne"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarasuara.DialogBunyiKo"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".aksarasuara.DialogBunyiKu"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".bermainaksara.hurufmudah.HurufMudah"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.HMSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HurufBiasa"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.HBSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.hurufsulit.HurufSulit"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.hurufsulit.HSSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.katasulit.KataSulit"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katasulit.KSSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.katabiasa.KataBiasa"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katabiasa.KBSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.katamudah.KataMudah"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal1"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal2"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal3"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal4"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal5"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal6"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal7"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal8"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal9"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".bermainaksara.katamudah.KMSoal10"
+            android:largeHeap="true"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".bermainaksara.hurufsulit.DialogKalahHS"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.hurufmudah.DialogKalahHM"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.hurufbiasa.DialogKalahHB"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.katasulit.DialogKalahKS"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.katabiasa.DialogKalahKB"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.katamudah.DialogKalahKM"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".bermainaksara.DialogMenang"
+            android:largeHeap="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    </application>
+</manifest>
